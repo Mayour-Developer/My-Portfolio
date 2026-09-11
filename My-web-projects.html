@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #012a4a;
+            height: 90px;
+            padding-left: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul li{
+            display: inline;
+            margin: 10px;
+            margin-right: 20px;
+        }
+        a:hover{
+            color: tomato;
+        }
+
+                    .arrow-bar {
+  width: 400px;
+  height: 80px;
+  
+  background-color: #70B63C;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.bar-text {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+   .m1{
+  width: 400px;
+  height: 80px;
+  
+  background-color: #70B63C;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  box-sizing: border-box;}
+
+  .m2{
+  width: 400px;
+  height: 80px;
+  display: flex;
+  background-color: #70B63C;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  box-sizing: border-box;}
+
+  :root {
+  /* Set your percentage value here (from 0% to 100%) */
+  --percentage: 75%;
+  --circle-size: 150px;
+  --bar-color: #3498db;
+  --track-color: #e0e0e0;
+}
+
+.percentage-circle {
+  position: relative;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  
+  /* Creates the progress ring effect */
+  background: conic-gradient(
+    var(--bar-color) var(--percentage), 
+    var(--track-color) 0
+  );
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-circle {
+  width: calc(var(--circle-size) - 20px);
+  height: calc(var(--circle-size) - 20px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+   :root {
+  --percentage: 87%;
+  --ring-dimensions: 150px;
+  --fill-color: #2ecc71;   /* Changed to an alternative green accent */
+  --base-color: #f1f2f6;   /* Soft off-white track color */
+}
+
+.progress-ring {
+  position: relative;
+  width: var(--ring-dimensions);
+  height: var(--ring-dimensions);
+  border-radius: 50%;
+  
+  /* Creates the progress look using the new variables */
+  background: conic-gradient(
+    var(--fill-color) var(--percentage), 
+    var(--base-color) 0
+  );
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-label {
+  width: calc(var(--ring-dimensions) - 24px); /* Slightly thicker ring border */
+  height: calc(var(--ring-dimensions) - 24px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2f3542;
+}
+
+:root {
+  --percentage: 99.9%;
+  --circle-diameter: 150px;
+  --accent-color: #9b59b6;  /* Sleek purple variation */
+  --track-color: #f5f6fa;   /* Very light clean track grey */
+}
+
+.metric-circle {
+  position: relative;
+  width: var(--circle-diameter);
+  height: var(--circle-diameter);
+  border-radius: 50%;
+  
+  /* Applies the 99.9% value via conic gradient */
+  background: conic-gradient(
+    var(--accent-color) var(--percentage), 
+    var(--track-color) 0
+  );
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-value {
+  width: calc(var(--circle-diameter) - 24px); 
+  height: calc(var(--circle-diameter) - 24px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.4rem; 
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.main-2{
+  display: flex;
+}
+
+.main-3{
+  display: flex;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Mayour Mahdev Rajput</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="MY-profiliyo.html" class="active">Home</a></li>
+                <li><a href="My-portfiliyo-about.html">About</a></li>
+                <li><a href="My-web-projects.html">Skills</a></li>
+                <li style="padding-right: 50px;">
+                <a href="web-side-contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-1">
+    <div class="arrow-bar">
+  <span class="bar-text">HTML</span>
+
+<div class="metric-circle">
+  <div class="metric-value">99.9%</div>
+</div>
+</div>
+    <br>
+    <div class="main-2">
+    <div class="m1">
+      <span class="bar-text">CSS</span>
+      <div class="progress-ring">
+        <div class="ring-label">87%</div>
+      </div>
+    </div>  
+</div>
+
+<br>
+       
+     <div class="main-3">
+       <div class="m2">
+         <span class="bar-text">Java Script</span>
+         <div class="percentage-circle">
+           <div class="inner-circle">75%</div>
+         </div>
+</div>
+</div>
+</body>
+</html>

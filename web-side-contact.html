@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f8fbff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #012a4a;
+            height: 90px;
+            padding-left: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul li{
+            display: inline;
+            margin: 10px;
+            margin-right: 20px;
+        }
+        a:hover{
+            color: tomato;
+        }
+
+        .hahaha{
+            background-color: white;
+            width: 1000px;
+            height: 550px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 0% auto;
+            border-radius: 10px;
+            justify-content: space-between;
+            
+        }
+
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 40px;
+        }
+
+        h1{
+            font-weight: lighter;
+            color: #012a4a;
+            margin-top: 150px;
+            font-size: 40px;
+        }
+        p{
+            color: #555555;
+            font-size: larger;
+        }
+
+        #input-1{
+            border: 2px solid #d6e4f0;
+            border-radius: 10px;
+            height: 60px;
+            width: 450px;
+            margin-top: 50px;
+        }
+
+        #input-2{
+
+            border: 2px solid #d6e4f0;
+            border-radius: 10px;
+            height: 60px;
+            width: 450px;
+        }
+
+        #input-3{
+            border: 2px solid #d6e4f0;
+            border-radius: 10px;
+            height: 60px;
+            width: 450px;   
+        }
+
+        ::placeholder{
+            font-size: larger;
+            padding: 10px;
+
+        }
+
+        #Message{
+            border: 2px solid #d6e4f0;
+            border-radius: 10px;
+            height: 150px;
+            width: 450px;
+        }
+
+        button{
+            background-color: #012a4a;
+            border: 0;
+            width: 450px;
+            height: 60px;
+            border-radius: 100px;
+            color: white;
+            font-weight: lighter;
+            font-size: larger;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Mayour Mahdev Rajput</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="MY-profiliyo.html" class="active">Home</a></li>
+                <li><a href="My-portfiliyo-about.html">About</a></li>
+                <li><a href="My-web-projects.html">Projects</a></li>
+                <li style="padding-right: 50px;">
+                <a href="web-side-contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hahaha">
+    <main>
+
+        <div class="left">
+
+    <h1>Contact Me</h1><br><br>
+    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your team. Feel free to contact me anytime.</p>
+
+  </div>
+
+  <div class="right">
+
+   <input type="text" placeholder="Your Name" id="input-1" required><br><br>
+   <input type="email" placeholder="Your Email" id="input-2" required><br><br>
+   <input type="text" placeholder="Subject" id="input-3" required><br><br>
+   <input type="text" placeholder="Your Message" id="Message" required><br><br>
+   <button onclick="">Send Message</button>
+    
+</div>
+</main>
+   
+</div>
+
+</body>
+</html>
